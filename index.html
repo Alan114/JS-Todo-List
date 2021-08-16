@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--Import materialize.css-->
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <title>Todo app</title>
+  </head>
+  <body class="amber lighten-5">
+    <div class="container">
+      <div>
+        <h2 class="blue-text center-align">Todo List</h2>
+        <form class="addTodo center-align">
+          <label class="blue-text text-lighten-2">Add a new todo</label>
+          <input class="form-input" type="text" name="add" />
+        </form>
+      </div>
+      <ul class="todos">
+        <li>
+          Code
+          <i class="material-icons red-text right">close </i>
+        </li>
+        <li>Read a book <i class="material-icons red-text right">close</i></li>
+        <li>
+          Exercise
+          <i class="material-icons red-text right">close</i>
+        </li>
+      </ul>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

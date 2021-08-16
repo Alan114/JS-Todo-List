@@ -1,0 +1,33 @@
+.container {
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+h2 {
+  margin: 4rem 0;
+  max-width: 23rem;
+}
+
+.addTodo {
+  width: 23rem;
+}
+
+label {
+  font-size: 2rem;
+}
+
+ul {
+  max-width: 23rem;
+  margin: 4rem 0;
+}
+
+li {
+  margin: 2rem 0;
+  border: rgb(123, 216, 240) 1px solid;
+  padding: 1rem;
+  background-color: rgb(236, 245, 244);
+}
+
+i {
+  cursor: pointer;
+}
