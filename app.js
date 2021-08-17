@@ -12,8 +12,10 @@ addForm.addEventListener("submit", e => {
   }
 });
 
-list.addEventListener("click", () => {
-  if (deleteIcon) {
-    console.log("X has been clicked");
-  }
+list.addEventListener("click", e => {
+  deleteIcon.forEach(icon => {
+    if (e.target === icon) {
+      icon.parentElement.remove();
+    }
+  });
 });
