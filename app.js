@@ -1,9 +1,6 @@
 const addForm = document.querySelector(".addTodo");
 const list = document.querySelector(".todos");
-
-// const makeTodo = () => {
-//   const todo = document.createElement("li");
-// };
+const deleteIcon = document.querySelectorAll(".material-icons");
 
 addForm.addEventListener("submit", e => {
   e.preventDefault();
@@ -13,5 +10,10 @@ addForm.addEventListener("submit", e => {
     list.innerHTML += todoTemplate;
     addForm.reset();
   }
-  //   makeTodo(todoText);
+});
+
+list.addEventListener("click", () => {
+  if (deleteIcon) {
+    console.log("X has been clicked");
+  }
 });
