@@ -1,6 +1,5 @@
 const addForm = document.querySelector(".addTodo");
 const list = document.querySelector(".todos");
-const deleteIcon = document.querySelectorAll(".material-icons");
 
 addForm.addEventListener("submit", e => {
   e.preventDefault();
@@ -13,9 +12,7 @@ addForm.addEventListener("submit", e => {
 });
 
 list.addEventListener("click", e => {
-  deleteIcon.forEach(icon => {
-    if (e.target === icon) {
-      icon.parentElement.remove();
-    }
-  });
+  if (e.target.className.includes("material-icons")) {
+    e.target.parentElement.remove();
+  }
 });
